@@ -19,6 +19,7 @@ const ProductsDisplay = () => {
             <div className="text-center">
               <h4 className="mt-2 font-semibold text-lg">{product.title}</h4>
               <p className="text-green-500 font-bold">{`$${product.price}`}</p>
+              <p className="mt-2 font-semibold text-md">rating : <strong>{ product.rating.rate}</strong></p>
             </div>
           </div>
         ))}
