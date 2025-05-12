@@ -17,12 +17,12 @@ const Navbar = () => {
           </div>
 
 
-          <div className="hidden md:block flex-grow mx-4">
+          <div className="hidden md:block flex-grow  mx-4">
             <div className="relative max-w-md mx-auto">
               <input
                 type="text"
                 placeholder="Search..."
-                className="w-full h-9 border border-gray-400 rounded pl-10 pr-4 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full h-9 border border-gray-400 rounded shadow pl-10 pr-4 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
               <div className="absolute left-3 top-2.5 text-gray-400">
                 <svg
