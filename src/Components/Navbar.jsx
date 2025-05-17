@@ -1,16 +1,22 @@
 import React, { useState } from "react";
 import "../app.css";
 import cartImage from "../assets/cartPicture.png";
+import { useNavigate } from "react-router";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate=useNavigate()
+
+  const goToCart=()=>{
+    navigate('/cart');
+  }
 
   return (
     <nav className="bg-white shadow-md fixed w-full top-0 left-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
 
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0" onClick={()=>navigate('/')}>
             <a href="#" className="text-3xl font-bold text-red-500">
               EKart
             </a>
@@ -44,19 +50,19 @@ const Navbar = () => {
 
 
           <div className="hidden md:flex space-x-6 items-center">
-            <a href="#" className="text-gray-700 hover:text-blue-500">
+            <a href="/" className="text-gray-700 hover:text-blue-500">
               Home
             </a>
-            <a href="#" className="text-gray-700 hover:text-blue-500">
+            <a href="/" className="text-gray-700 hover:text-blue-500">
               About
             </a>
-            <a href="#" className="text-gray-700 hover:text-blue-500">
+            <a href="/" className="text-gray-700 hover:text-blue-500">
               Services
             </a>
-            <a href="#" className="text-gray-700 hover:text-blue-500">
+            <a href="/" className="text-gray-700 hover:text-blue-500">
               Contact
             </a>
-            <button className="p-0">
+            <button className="p-0" onClick={()=>goToCart()}>
               <img className="w-8 h-8" src={cartImage} alt="Cart" />
             </button>
           </div>
@@ -113,7 +119,7 @@ const Navbar = () => {
               </svg>
             </div>
           </div>
-          <a href="#" className="block text-gray-700 hover:text-blue-500">
+          <a href="/" className="block text-gray-700 hover:text-blue-500">
             Home
           </a>
           <a href="#" className="block text-gray-700 hover:text-blue-500">
