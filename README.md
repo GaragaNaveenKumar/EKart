@@ -32,7 +32,7 @@ eKart is a full-featured e-commerce web application that lets users browse produ
 
 ## 🧰 Tech Stack
 
-- Frontend: React.js 
+- Frontend: React.js + tailwindcss
 - Backend: Node.js + Express
 - Database: MongoDB /  SQL
 - Deployment: Vercel /Render
