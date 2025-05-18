@@ -1,5 +1,5 @@
 import React from 'react'
-import './app.css';
+import './App.css';
 import Navbar from './Components/Navbar';
 import ProductsDisplay from './Components/ProductsDisplay';
 import {CartProvider} from './Components/CartContext.jsx';
