@@ -39,7 +39,7 @@ const Cart = () => {
                 <div className="flex-1">
                   <h3 className="text-lg font-medium">{item.title}</h3>
                   <p className="text-sm text-gray-600">Qty: {item.quantity ||1}</p>
-                  <p className="text-sm text-gray-800 font-semibold">
+                  <p className="text-sm text-green-500 font-semibold">
                     ${(item.price * (item.quantity ||1)).toFixed(2)}
                   </p>
                 </div>
@@ -68,7 +68,7 @@ const Cart = () => {
       <div className="sticky top-4 h-fit p-4 border rounded-lg shadow-sm bg-white">
         <h3 className="text-xl font-semibold mb-2">Order Summary</h3>
         <p className="mb-2">Total Items: {state.cartItems.length}</p>
-        <p className="mb-4 text-lg font-bold">Total: ${total.toFixed(2)}</p>
+        <p className="mb-4 text-lg text-green-500 font-bold">Total: ${total.toFixed(2)}</p>
 
         <button
           disabled={state.cartItems.length === 0}
