@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { products } from '../Data/Products.js';
 import { useCart } from './CartContext';
+import '../App.css'
 
 const Product = () => {
   const { search } = useLocation();

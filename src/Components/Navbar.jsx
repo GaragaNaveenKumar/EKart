@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../app.css";
+import "../App.css";
 import cartImage from "../assets/cartPicture.png";
 import { useNavigate } from "react-router";
 
