@@ -13,7 +13,7 @@ eKart is a full-featured e-commerce web application that lets users browse produ
 - 🌐 Responsive design
 
 # visit
-![Ekart](https://e-kart-tawny.vercel.app/)
+[https://e-kart-tawny.vercel.app/]
 
 ## 📸 Screenshots
 
