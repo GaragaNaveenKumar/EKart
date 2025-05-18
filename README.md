@@ -23,8 +23,7 @@ eKart is a full-featured e-commerce web application that lets users browse produ
 ### 🛒 Cart Page
 ![Cart Page](screenshots/cart.png)
 
-### 🔐 Login Page
-![Login Page](screenshots/login.png)
+
 
 
 
@@ -33,7 +32,7 @@ eKart is a full-featured e-commerce web application that lets users browse produ
 - Frontend: React.js 
 - Backend: Node.js + Express
 - Database: MongoDB /  SQL
-- Deployment: Vercel 
+- Deployment: Vercel /Render
 
 ## 🛠️ Installation
 
@@ -47,8 +46,9 @@ npm install
 
 # Run the app
 npm run dev
-
-#Folder Structure
+```
+## Folder Structure
+```bash
 ekart/
 │
 ├── public/
@@ -63,3 +63,4 @@ ekart/
 │   └── ...
 ├── package.json
 └── README.md
+```
