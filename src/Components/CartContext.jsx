@@ -10,7 +10,7 @@ const cartReducer=(state,action)=>{
     switch(action.type){
         case 'ADD_ITEM':
             
-            return {cartItems:[...state.cartItems,action.payload]};
+            return {cartItems:[...state.cartItems.filter(item=>item.id!=action.payload.id),action.payload]};
         case 'REMOVE_ITEM':
             return {cartItems:state.cartItems.filter(item=>item.id!=action.payload)};
         case 'CLEAR_CART':

@@ -2,14 +2,21 @@ import React from "react";
 import { products } from "../Data/Products";
 import "../App.css";
 import {useCart} from "./CartContext.jsx";
+import { useNavigate } from "react-router";
 
 const ProductsDisplay = () => {
   const { dispatch } = useCart();
+  const navigate=useNavigate();
 
   const addToCart = (product) => {
     console.log(product)
     dispatch({ type: "ADD_ITEM", payload: product });
   };
+
+  const goToProduct=(id)=>{
+    navigate(`/product?id=${id}`);
+
+  }
 
   return (
     <div className="bg-white py-6 px-4">
@@ -23,6 +30,7 @@ const ProductsDisplay = () => {
               src={product.image}
               alt={product.title}
               className="w-32 h-32 object-contain mb-4"
+              onClick={()=>goToProduct(product.id)}
             />
             <div className="text-center">
               <h4 className="mt-2 font-semibold text-lg">{product.title}</h4>
